@@ -1,0 +1,109 @@
+/* Estilos da página de login */
+
+.area-login {
+    display: flex;
+    text-align: center;
+    gap: 150px;
+}
+
+.area-login .imagem-login {
+    width: 600px;
+    height: 100%;
+}
+
+.login .titulo .texto-titulo {
+    color: #053451;
+    font-weight: 900;
+    font-size: 50px;
+    margin: 80px 0 18px 0;
+}
+
+.login .titulo .descricao-titulo {
+    margin: 0;
+    font-weight: 700;
+    font-size: 24px;
+    color: #095F95;
+}
+
+.login .interacao-usuario .titulo-interacao {
+    font-size: 24px;
+    margin: 100px 20px 0 0;
+    text-align: center;
+}
+
+.login .interacao-usuario h2{
+    font-size: 18px;
+    font-weight: 700;
+    color: #053451;
+    text-align: center;
+    margin: 20px 340px 8px 0;
+}
+
+.login .interacao-usuario .inputs-usuario {
+    display: flex;
+    justify-content: center;
+}
+
+.login .interacao-usuario .inputs-usuario input {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+    width: 400px;
+    height: 50px;
+    padding-left: 10px;
+    border-radius: 18px;
+    background-color: #D9D9D9;
+    color: #333;
+    border: 2px solid #053451
+}
+
+.login .entrar {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.login .entrar .botao-entrar {
+    font-size: 24px;
+    font-weight: 700;
+    width: 170px;
+    height: 55px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    background-color: #0B7ABF;
+    color: #ffffff;
+}
+
+/* Cadastrar */
+
+.cadastrar-novo {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cadastrar-novo .linha {
+    width: 150px;
+    height: 1px;
+    background-color: black;
+}
+
+.cadastrar-novo h3 {
+    font-size: 18px;
+    font-weight: 400;
+    padding: 0 20px;
+}
+
+.cadastre-se {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cadastre-se a {
+    font-size: 18px;
+    font-weight: 400;
+    color: #0B7ABF;
+}
