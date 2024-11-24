@@ -1,0 +1,100 @@
+{% load static %}<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuidapet - Pet Shops</title>
+
+    <link rel="stylesheet" href="{% static "css/base.css" %}">
+    <link rel="stylesheet" href="{% static "css/header.css" %}">
+    <link rel="stylesheet" href="{% static "css/pages/petshops.css" %}">
+</head>
+<body>
+    <header class="cabecalho">
+        <h1 class="logo-cuidapet">
+            <a href="{% url "inicio" %}">CUIDAPET</a>
+        </h1>
+
+        <nav class="navegacao">
+            <ul>
+                <li>
+                    <a href="{% url "inicio" %}">HOME</a>
+                </li>
+                <li>
+                    <a href="{% url "sobre nos" %}">SOBRE NÓS</a>
+                </li>
+                <li class="foto-perfil">
+                    <a href="{% url "perfil usuario" %}">
+                        <img src="../../static/css/imagens/foto-perfil-padrao.png" alt="foto-perfil">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <h1 class="titulo-pagina">PET SHOPS PRÓXIMOS</h1>
+    
+    <!-- Lista com as localizações dos petshops encontrados pela API -->
+    <!-- Ao apertar em ver mais o usuário deverá ser redirecionado ao google maps  -->
+     
+    <div class="container-petshops">
+        <ul>
+            <li class="petshop">
+                <div class="imagem">
+                    <img src="../../static/css/imagens/noticias.png" alt="Notícia 1">
+                </div>
+                <div class="titulo-e-descricao">
+                    <h2>PETSHOP 1</h2>
+                    <p>Pequena descrição do petshop</p>
+                </div>
+                <div class="botao-ver-mais">
+                    <a class="botao-petshop" href="#">VER MAIS</a>
+                </div>
+            </li>
+
+            <li class="petshop">
+                <div class="imagem">
+                    <img src="../../static/css/imagens/noticias.png" alt="Notícia 1">
+                </div>
+                <div class="titulo-e-descricao">
+                    <h2>PETSHOP 2</h2>
+                    <p>Pequena descrição do petshop</p>
+                </div>
+                <div class="botao-ver-mais">
+                    <a class="botao-petshop" href="#">VER MAIS</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container-petshops">
+        <ul>
+            <li class="petshop">
+                <div class="imagem">
+                    <img src="../../static/css/imagens/noticias.png" alt="Notícia 1">
+                </div>
+                <div class="titulo-e-descricao">
+                    <h2>PETSHOP 3</h2>
+                    <p>Pequena descrição do petshop</p>
+                </div>
+                <div class="botao-ver-mais">
+                    <a class="botao-petshop" href="#">VER MAIS</a>
+                </div>
+            </li>
+
+            <li class="petshop">
+                <div class="imagem">
+                    <img src="../../static/css/imagens/noticias.png" alt="Notícia 1">
+                </div>
+                <div class="titulo-e-descricao">
+                    <h2>PETSHOP 4</h2>
+                    <p>Pequena descrição do petshop</p>
+                </div>
+                <div class="botao-ver-mais">
+                    <a class="botao-petshop" href="#">VER MAIS</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

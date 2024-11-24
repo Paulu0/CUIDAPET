@@ -12,18 +12,22 @@
 <body>
     <header class="cabecalho">
         <h1 class="logo-cuidapet">
-            <a href="{% static "../inicio" %}">CUIDAPET</a>
+            <a href="{% url "inicio" %}">CUIDAPET</a>
         </h1>
 
         <nav class="navegacao">
             <ul>
                 <li>
-                    <a href="{% static "../inicio" %}">HOME</a>
+                    <a href="{% url "inicio" %}">HOME</a>
                 </li>
                 <li>
-                    <a href="{% static "../sobre" %}">SOBRE NÓS</a>
+                    <a href="{% url "sobre nos" %}">SOBRE NÓS</a>
                 </li>
-                <li class="foto-perfil"></li>
+                <li class="foto-perfil">
+                    <a href="{% url "perfil usuario" %}">
+                        <img src="../../static/css/imagens/foto-perfil-padrao.png" alt="foto-perfil">
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -61,7 +65,7 @@
             </div>
 
             <div class="registrar-novo-medicamento">
-                <a href="{% static "../registrar medicamento" %}">REGISTRAR NOVO MEDICAMENTO</a>
+                <a href="{% url "registrar medicamento" %}">REGISTRAR NOVO MEDICAMENTO</a>
             </div>
 
             <!-- PARTE 2, VACINAS -->
@@ -87,7 +91,7 @@
             </div>
 
             <div class="registrar-novo-vacinas">
-                <a href="./registrar_nova_vacina.html">REGISTRAR NOVA VACINA</a>
+                <a href="{% url "registrar vacina*" %}">REGISTRAR NOVA VACINA</a>
             </div>
         </div>
     </div>

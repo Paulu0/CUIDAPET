@@ -7,6 +7,7 @@ from django.urls import include, path
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('login.urls')),
+    path('login/', include('login.urls')),
     path('cadastro/', include('login.urls')),
     path('inicio/', include('login.urls')),
     path('sobre/', include('login.urls')),
@@ -16,6 +17,16 @@ urlpatterns = [
     path('banho e tosa/', include('login.urls')),
     path('medicamentos e vacinas/', include('login.urls')),
     path('registrar medicamento/', include('login.urls')),
+    path('rotina/', include('login.urls')),
+    path('registrar nova rotina/', include('login.urls')),
+    path('petshops/', include('login.urls')),
+    path('editar perfil/', include('login.urls')),
+    path('petshops/', include('login.urls')),
+    path('editar perfil/', include('login.urls')),
+    path('perfil usuario/', include('login.urls')),
+    path('noticias/', include('login.urls')),
+    path('noticia unica/', include('login.urls')),
+    
 
 
 ]

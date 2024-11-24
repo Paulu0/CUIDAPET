@@ -7,23 +7,27 @@
 
     <link rel="stylesheet" href="{% static "css/base.css" %}">
     <link rel="stylesheet" href="{% static "css/header.css" %}">
-    <link rel="stylesheet" href="{% static "css/pages/cadastrarPet.css" %}">
+    <link rel="stylesheet" href="{% static "css/pages/cadastrarpet.css" %}">
 </head>
 <body>
     <header class="cabecalho">
         <h1 class="logo-cuidapet">
-            <a href="../pagina_principal/pagina_principal.html">CUIDAPET</a>
+            <a href="{% url "inicio" %}">CUIDAPET</a>
         </h1>
 
         <nav class="navegacao">
             <ul>
                 <li>
-                    <a href="../pagina_principal/pagina_principal.html">HOME</a>
+                    <a href="{% url "inicio" %}">HOME</a>
                 </li>
                 <li>
-                    <a href="../sobre_nos/sobre_nos.html">SOBRE NÓS</a>
+                    <a href="{% url "sobre nos" %}">SOBRE NÓS</a>
                 </li>
-                <li class="foto-perfil"></li>
+                <li class="foto-perfil">
+                    <a href="{% url "perfil usuario" %}">
+                        <img src="../../static/css/imagens/foto-perfil-padrao.png" alt="foto-perfil">
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -85,7 +89,7 @@
             </div>
         </form>
 
-        <form action="./meus_pets.html" method="post" class="botao-cadastrar-pet">
+        <form action="{% url "meus pets" %}" method="post" class="botao-cadastrar-pet">
             <button class="botao-cadastrar-pet">CADASTRAR</button>
         </form>
     </div>

@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CuidaPet - Banho e Tosa</title>
+    <title>CuidaPet - Seu Perfil</title>
 
     <link rel="stylesheet" href="{% static "css/base.css" %}">
     <link rel="stylesheet" href="{% static "css/header.css" %}">
-    <link rel="stylesheet" href="{% static "banho_e_tosa.css" %}">
+    <link rel="stylesheet" href="{% static "css/pages/perfil_usuario.css" %}">
 </head>
 <body>
     <header class="cabecalho">
@@ -32,38 +32,37 @@
         </nav>
     </header>
 
-    <h1 class="titulo-pagina">BANHO E TOSA</h1>
-
-    <div class="banho">
-        <div class="informacoes-pet">
-            <div class="imagem-pet">
-                <img src="../../static/css/imagens/banho.png" alt="imagem do pet">
+    <h1 class="titulo-pagina">SEU PERFIL</h1>
+    
+    <div class="perfil-usuario">
+        <div class="informacoes-usuario">
+            <div class="imagem-usuario">
+                <img src="../../static/css/imagens/foto-perfil-padrao.png" alt="imagem do usuario">
             </div>
-            <div class="nome-do-pet">
-                <h2>NOME DO PET</h2>
-            </div>
-        </div>
-
-        <div class="informacoes-banho-pet">
-            <div class="titulo-banho-pet">
-                <h2>DATA DO ÚLTIMO BANHO</h2>
-                <h2>PRÓXIMO BANHO</h2>
-            </div>
-
-            <div class="datas-banho">
-                <h3>13/11/2024</h3>
-                <h3 class="data-proximo-banho">20/11/2024</h3>
-            </div>
-
-            <div class="situacao-banho-pet">
-                <h3>SEU PET ESTÁ EM DIA COM O BANHO</h3>
-            </div>
-
-            <div class="registrar-novo-banho">
-                <a href="{% url "registrar banho" %}">REGISTRAR NOVO BANHO</a>
+            <div class="nome-do-usuario">
+                <h2>NOME DO USUARIO</h2>
             </div>
         </div>
 
+        <div class="dados-usuario">
+            <div>
+                <h2>NOME:</h2>
+                <div class="container-dado">
+                    <h3>NOME COMPLETO USUARIO</h3>
+                </div>
+                <h2>EMAIL:</h2>
+                <div class="container-dado">
+                    <h3>EMAIL USUARIO</h3>
+                </div>
+                <h2>SENHA:</h2>
+                <div class="container-dado">
+                    <h3>SENHA USUARIO</h3>
+                </div>
+            </div>
+
+            <div class="editar-perfil-usuario">
+                <a href="./editar_perfil.html">EDITAR PERFIL</a>
+            </div>
     </div>
 </body>
 </html>

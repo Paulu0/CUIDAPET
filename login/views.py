@@ -42,3 +42,30 @@ def medicamentos_e_vacinas(request):
     print('medicamentos_e_vacinas')
     return render(request, 'medicamentos_e_vacinas.html')
 
+def rotina(request):
+    print('rotina')
+    return render(request, 'rotina.html')
+
+def registrar_nova_rotina(request):
+    print('registrar_nova_rotina')
+    return render(request, 'registrar_nova_rotina.html')
+
+def petshops(request):
+    print('petshops')
+    return render(request, 'petshops.html')
+
+def editar_perfil(request):
+    print('editar_perfil')
+    return render(request, 'editar_perfil.html')
+
+def perfil_usuario(request):
+    print('perfil_usuario')
+    return render(request, 'perfil_usuario.html')
+
+def noticias(request):
+    print('noticias')
+    return render(request, 'noticias.html')
+
+def noticia_unica(request):
+    print('noticia_unica')
+    return render(request, 'noticia_unica.html')

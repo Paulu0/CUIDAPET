@@ -7,21 +7,21 @@
 
     <link rel="stylesheet" href="{% static "css/base.css" %}">
     <link rel="stylesheet" href="{% static "css/header.css" %}">
-    <link rel="stylesheet" href="{% static "css/pages/sobre_nos.css" %}">
+    {% block sobre %} <link rel="stylesheet" href="{% static "css/pages/sobre_nos.css" %}"> {% endblock sobre %}
 </head>
 <body>
     <header class="cabecalho">
         <h1 class="logo-cuidapet">
-            <a href="{% static "../inicio" %}">CUIDAPET</a>
+            <a href="{% url "inicio" %}">CUIDAPET</a>
         </h1>
 
         <nav class="navegacao">
             <ul>
                 <li>
-                    <a href="{% static "../inicio" %}">HOME</a>
+                    <a href={% url "inicio" %}>HOME</a>
                 </li>
                 <li>
-                    <a href="{% static "../sobre" %}">SOBRE NÓS</a>
+                    <a href={% url "sobre nos" %}>SOBRE NÓS</a>
                 </li>
                 <li class="foto-perfil"></li>
             </ul>

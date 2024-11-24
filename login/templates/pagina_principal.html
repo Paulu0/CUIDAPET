@@ -12,16 +12,16 @@
 <body>
     <header class="cabecalho">
         <h1 class="logo-cuidapet">
-            <a href="{% static "../inicio" %}">CUIDAPET</a>
+            <a href="{% url "inicio" %}">CUIDAPET</a>
         </h1>
 
         <nav class="navegacao">
             <ul>
                 <li>
-                    <a href="{% static "../inicio" %}">HOME</a>
+                    <a href="{% url "inicio" %}">HOME</a>
                 </li>
                 <li>
-                    <a href="{% static "../sobre" %}">SOBRE NÓS</a>
+                    <a href="{% url "sobre nos" %}">SOBRE NÓS</a>
                 </li>
                 <li class="foto-perfil"></li>
             </ul>
@@ -37,7 +37,7 @@
 
         <ul class="botoes">
             <li class="meus-pets">
-                <a href="{% static "../meus pets" %}">
+                <a href="{% url "meus pets" %}">
                     <h3>MEUS PETS</h3>
                     <p>Gerencie informações dos seus pets em um só lugar</p>
                     <img src="../app/static/css/imagens/meus-pets.png" alt="imagem-meus-pets" class="imagem-meus-pets">
@@ -45,7 +45,7 @@
             </li>
 
             <li class="banho-e-tosa">
-                <a href="{% static "../banho e tosa" %}">
+                <a href="{% url "banho e tosa" %}">
                     <h3>BANHO E TOSA</h3>
                     <p>Acompanhe o histórico e receba lembretes para novos cuidados</p>
                     <img src="../app/static/css/imagens/banho.png" alt="banho" class="imagem-banho">
@@ -53,7 +53,7 @@
             </li>
 
             <li class="medicamentos-e-vacinas">
-                <a href="{% static "../medicamentos e vacinas" %}">
+                <a href="{% url "medicamentos e vacinas" %}">
                     <h3>MEDICAMENTOS E VACINAS</h3>
                     <p>Organize vacinas e medicamentos para garantir a saúde do seu pet</p>
                     <img src="../app/static/css/imagens/medicamentos-e-vacinas.png" alt="imagem-medicamentos-e-vacinas" class="imagem-medicamentos-e-vacinas">
@@ -61,7 +61,7 @@
             </li>
 
             <li class="noticias">
-                <a href="{% static "************" %}">
+                <a href="{% url "noticias" %}">
                     <h3>NOTÍCIAS</h3>
                     <p>Confira dicas e novidades do mundo pet para melhor cuidar do seu animal</p>
                     <img src="../app/static/css/imagens/noticias.png" alt="imagem-noticias" class="imagem-noticias">
@@ -69,7 +69,7 @@
             </li>
 
             <li class="pet-shops">
-                <a href="{% static "************" %}">
+                <a href="{% url "petshops" %}">
                     <h3>PET-SHOPS</h3>
                     <p>Encontre pet-shops próximos e informações úteis</p>
                     <img src="../app/static/css/imagens/pet-shops.png" alt="imagem-pet-shops" class="imagem-pet-shops">
@@ -77,7 +77,7 @@
             </li>
 
             <li class="rotina">
-                <a href="{% static "*********" %}">
+                <a href="{% url "rotina" %}">
                     <h3>ROTINA</h3>
                     <p>Crie uma rotina de cuidados para uma vida saudável e equilibrada</p>
                     <img src="../app/static/css/imagens/rotina.png" alt="rotina" class="imagem-rotina">
@@ -131,20 +131,20 @@
                 <li class="inicio-rodape">
                     <h3>ÍNICIO</h3>
                     <ul>
-                        <li><a href="../inicio">Home</a></li>
-                        <li><a href="../meus pets">Meus Pets</a></li>
-                        <li><a href="../banho e tosa">Banho e Tosa</a></li>
-                        <li><a href="../medicamentos e vacinas">Medicamentos e Vacinas</a></li>
-                        <li><a href="**********">Notícias</a></li>
-                        <li><a href="**********">Pet Shops</a></li>
-                        <li><a href="**********">Rotina</a></li>
+                        <li><a href="{% url "inicio" %}">Home</a></li>
+                        <li><a href="{% url "meus pets" %}">Meus Pets</a></li>
+                        <li><a href="{% url "banho e tosa" %}">Banho e Tosa</a></li>
+                        <li><a href="{% url "medicamentos e vacinas" %}">Medicamentos e Vacinas</a></li>
+                        <li><a href="{% url "noticias" %}">Notícias</a></li>
+                        <li><a href="{% url "petshops" %}">Pet Shops</a></li>
+                        <li><a href="{% url "rotina" %}">Rotina</a></li>
                     </ul>
                 </li>
 
                 <li class="sobre-rodape">
                     <h3>SOBRE</h3>
                     <ul>
-                        <li><a href="../sobre">Sobre nós</a></li>
+                        <li><a href="{% url "sobre nos" %}">Sobre nós</a></li>
                     </ul>
                 </li>
             </ul>
